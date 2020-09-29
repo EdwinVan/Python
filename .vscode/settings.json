@@ -1,0 +1,10 @@
+{
+    "python.linting.pylintArgs": [
+        "--generate-members"
+    ],
+    "cSpell.words": [
+        "penup"
+    ],
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false
+}
