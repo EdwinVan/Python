@@ -1,5 +1,5 @@
 # 6-1.py 随机生成一个密码，保存于list列表，成分限于26个字母大小写以及9个数字
-# 2020-10-23
+# 2020-11-5
 # fyj
 
 import random
@@ -30,7 +30,7 @@ for j in range(10):
         String_demo += passport[j][i]
 
     passport_last.append(String_demo)
-    print("密码{:>2.0f}----------> {}".format(j + 1, passport_last[j]))
+    print("密码{:>2.0f}-----------{}".format(j + 1, passport_last[j]))
 
 
 

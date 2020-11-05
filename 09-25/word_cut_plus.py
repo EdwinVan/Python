@@ -6,7 +6,7 @@
 
 import time
 start_Time = time.time()              # 开始计时
-book = open('H:\Edwin\Desktop\Little Prince.txt')
+book = open('H:\Edwin\Desktop\Python\09-26\Little Prince.txt')
 str = book.read()                     # 读取txt文档内容
 book.close()                          # 关闭文件
 
