@@ -3,7 +3,7 @@
 # 2020-11-18
 
 from PIL import Image
-ascii_char = list("$%_&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-/+@<>i!;:,\^`.")
+ascii_char = list("$%_&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-/+@")
 def get_char(r, b, g, alpha=256):
     if alpha == 0:
         return ' '
@@ -12,8 +12,8 @@ def get_char(r, b, g, alpha=256):
     return ascii_char[int(gray/unit)]
 
 def main():
-    im = Image.open('小新.png')
-    WIDTH , HEIGHT = 200, 400
+    im = Image.open('sister2.jpg')
+    WIDTH , HEIGHT = 200, 100
     im = im.resize((WIDTH, HEIGHT))
     txt = ""
     for i in range(HEIGHT):
