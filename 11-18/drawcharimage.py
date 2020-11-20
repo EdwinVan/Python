@@ -12,7 +12,7 @@ def get_char(r, b, g, alpha=256):
     return ascii_char[int(gray/unit)]
 
 def main():
-    im = Image.open('sister2.jpg')
+    im = Image.open('1.jpg')
     WIDTH , HEIGHT = 200, 100
     im = im.resize((WIDTH, HEIGHT))
     txt = ""
