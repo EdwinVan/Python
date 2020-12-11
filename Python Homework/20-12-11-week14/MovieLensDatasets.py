@@ -1,5 +1,5 @@
 # 基于Pandas库 分析男女电影打分差异
-# 2020-12-11
+# 2020-12-10
 # fyj
 
 import numpy as np

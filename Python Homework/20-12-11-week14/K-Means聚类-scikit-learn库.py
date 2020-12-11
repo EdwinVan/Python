@@ -1,5 +1,5 @@
 # 使用scikit-learn库，按成绩将6个人分为两类
-# 2020-12-11
+# 2020-12-10
 # fyj
 
 import numpy as np
