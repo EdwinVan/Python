@@ -6,11 +6,11 @@ import requests
 from lxml import etree
 import time
 
-web_num = 22   # 共24页
-num = 0
+web_num = 24   # 共24页
+num = 0   # 记录爬取的文章数量
 
 
-def get_info_1(page):
+def get_info(page):
     headers = {
         'Accept': '*/*',
         'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
@@ -65,12 +65,20 @@ def get_info_1(page):
                 f.write(item.xpath('string(.)'))
 
 
-
 def main():
-    for i in range(1, 5):   # 爬取1-10页面的所有文章保存到本地文件 speak_all_1.txt
-        get_info_1(i)
+    start = time.time()
+    for i in range(1, web_num+1):   # 爬取1-web_num页面的所有文章保存到本地文件 speak_all_1.txt
+        print("*****************")
+        print("开始获取第{}页的数据".format(i))
+        get_info(i)
+        print("获取第{}页的数据完毕".format(i))
+        print("*****************")
 
     global num
-    print(num)
+    print("程序运行结束")
+    print("\n文章数量{}".format(num))
+    end = time.time()
+    print("用时{:.2f}s".format(end-start))
+
 
 main()
