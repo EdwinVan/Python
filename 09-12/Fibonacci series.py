@@ -4,8 +4,8 @@
 # 2020-09-12
 # fyj
 
-a,b=0,1
+a, b = 0,1
 while b < 10:
-    print (b)
-    a,b=b,a+b
+    print(b)
+    a, b = b, a+b
     
